@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2020",                                 
+    "module": "NodeNext",                                
+    "forceConsistentCasingInFileNames": true,        
+     "strict": true,    
+     "sourceMap": true, 
+     "outDir": "dist",                               
+    "skipLibCheck": true,
+    "esModuleInterop": true                           
+  },
+  "ts-node": {
+    "esm": true, /* ... Line to be added ... */
+  } ,
+  "include": ["src/**/*"],
+}
