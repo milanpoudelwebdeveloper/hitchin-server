@@ -1,0 +1,24 @@
+CREATE DATABASE hitchin;
+
+CREATE TABLE channels (
+id SERIAL PRIMARY KEY,
+username VARCHAR(255) UNIQUE NOT NULL,
+name VARCHAR(255) NOT NULL,
+image VARCHAR(255) NOT NULL,
+bio VARCHAR(255) NOT NULL,
+onboarded BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+-- CREATE TABLE thread (
+-- id SERIAL PRIMARY KEY,
+-- title VARCHAR(255) NOT NULL,
+-- body VARCHAR(255) NOT NULL,
+-- userId INT REFERENCES user(id),
+-- );
+
+-- CREATE TABLE community (
+-- id SERIAL PRIMARY KEY,
+-- name VARCHAR(255) NOT NULL,
+-- description VARCHAR(255) NOT NULL,
+-- image VARCHAR(255) NOT NULL,
+-- )
